@@ -1,0 +1,48 @@
+Instructions for using program
+
+Using makefile
+- set makefile on the same directory in which the file 20141515.h, 20141515.c is in it.
+- use command "make" on linux.
+- file 20141515.out is made and use it by using command "./20141515.out".
+- program started...
+
+Using Program
+
+- h[elp]   :	sicsim> h  or sicsim> help	displays all commands supported by this program.
+
+- d[ir]	   :	sicsim> d  or sicsim> dir	shows the files in the current directory.
+
+- q[uit]   :	sicsim> q  or sicsim> quit	exit program.
+
+- hi[story]:	sicsim> hi or sicsim> history	shows the previous valid user commands.
+
+- du[mp] (3 types)
+  >case1(no argument) :	sicsim> du 		or sicsim> dump			
+	Print 160bytes of memory. (first time : start address is 0, again : start address is last address + 1)
+  >case2(1 argument)  :	sicsim> du start	or sicsim> dump start	
+	Print 160bytes of memory from the start address.
+  >case3(2 arguments) : sicsim> du start, end	or sicsim> dump start, end
+	Print memory from the start address to the end address.
+
+- e[dit]   :	sicsim> e address, value	or	sicsim> edit address, value
+	sets the memory content at address to value.
+
+- f[ill]   :	sicsim> f start, end, value	or	sicsim fill start, end, value
+	sets the memory contents from start to end value.
+
+- reset    :	sicsim> reset			sets all of the memory contents to 0
+
+- opcode mnemonic :	sicsim> opcode mnemonic
+	command shows the opcode of the corresponding mnemonic.
+
+- opcodelist	  :	sicsim> opcodelist
+	outputs the opcode hash table in an arranged format.
+
+- type		:	sicsim> type (filename)
+	displays the content of a file.
+
+- assemble	: 	sicsim> assemble (filename)
+	reads the given .asm file, and outputs an object file and a listing file.
+
+- symbol	:	sicsim> symbol
+	command displays symbol table created during the assembling process.
