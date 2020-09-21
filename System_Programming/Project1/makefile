@@ -1,0 +1,14 @@
+OBJECTS = 20141515.o
+SRCS = 20141515.c
+
+CC = gcc
+CFLAGS = -g -c -Wall
+
+TARGET = 20141515.out
+
+$(TARGET) : $(OBJECTS)
+	      $(CC) -o $(TARGET) $(OBJECTS)
+clean :
+	rm -rf $(OBJECTS) $(TARGET)
+
+20141515.o : 20141515.h 20141515.c
