@@ -1,0 +1,13 @@
+I A L
+S A
+I B L
+I C R
+S B
+I D L
+S B
+I D L
+I E R
+S C
+I F R
+S E
+I G L
